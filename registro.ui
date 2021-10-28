@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>747</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1045</width>
+    <height>747</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>1011</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777214</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ef7d00;
+font: 10pt &quot;Rockwell&quot;;
+ border-radius: 20px;
+</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cliente</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Contato</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Data</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Quantidade</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nome</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Categoria</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>239</red>
+       <green>125</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Preço</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Marca</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Codigo</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>Rockwell</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>600</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Proxima Nova Bl</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ef7d00;
+ border-radius: 20px;
+</string>
+    </property>
+    <property name="text">
+     <string>PDF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>610</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>111</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Proxima Nova Bl</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+ border-radius: 20px;
+color: #ef7d00;</string>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>610</y>
+      <width>411</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border-radius: 15px;
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Pesquise aqui...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>0</y>
+      <width>1111</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1111</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>2000x2000px.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>650</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Proxima Nova Bl</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+color: rgb(170, 0, 0);
+ border-radius: 20px;
+ </string>
+    </property>
+    <property name="text">
+     <string>Excluir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>446</x>
+      <y>710</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+ border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>715</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Valor em vendas</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
