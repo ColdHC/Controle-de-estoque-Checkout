@@ -20,8 +20,16 @@ banco = mysql.connector.connect(
     passwd="73914682@Vv",
     database="cadastro_produtos"
 )
-
+cursor = banco.cursor()
+cursor.execute("SELECT SUM(ROUND((preco*quantidade))) FROM historico")
+soma = cursor.fetchall()
+res = [list(ele) for ele in soma]
+    
+lt = ' '.join([str(elem) for elem in res])
+    
+lucro = (lt)[1:-1]
 def gerar_pdf():
+    global lucro
     cursor = banco.cursor()
     comando_SQL = "SELECT id,nomecliente,data,quantidade,preco FROM historico"
     cursor.execute(comando_SQL)
@@ -38,6 +46,9 @@ def gerar_pdf():
     pdf.setFillColorRGB(255,255,255)
     pdf.setStrokeColorRGB(255,255,255)
     pdf.drawString(250,4950, "Vendas")
+    pdf.setFont("Rockwell", 15)
+    pdf.drawString(20,4930, "valor em vendas: ")
+    pdf.drawString(155,4930, lucro)
     pdf.setFont("Rockwell", 15)
 
     pdf.drawString(40,4900, "ID")
@@ -187,7 +198,7 @@ def search(dados_lidos):
 
 def registro():
     regist.show()
-
+    global lucro
     cursor = banco.cursor()
     comando_SQL = "SELECT * FROM historico"
     cursor.execute(comando_SQL)
@@ -198,15 +209,9 @@ def registro():
     for i in range(0, len(dados_lidos)):
         for j in range(0, 10):
            regist.tableWidget.setItem(i,j,QtWidgets.QTableWidgetItem(str(dados_lidos[i][j])))
-    cursor.execute("SELECT SUM(ROUND((preco*quantidade))) FROM historico")
-    soma = cursor.fetchall()
-    res = [list(ele) for ele in soma]
     
-    lt = ' '.join([str(elem) for elem in res])
     
-    lt = (lt)[1:-1]
-    
-    regist.label_2.setText(lt)
+    regist.label_2.setText(lucro)
 
 def search2(dados_lidos):
 
