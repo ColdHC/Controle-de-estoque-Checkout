@@ -406,6 +406,38 @@ color: rgb(170, 0, 0);
      <string>Valor em vendas</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>680</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>111</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Proxima Nova Bl</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+ border-radius: 20px;
+color: #ef7d00;</string>
+    </property>
+    <property name="text">
+     <string>Clientes</string>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>tableWidget</zorder>
    <zorder>pushButton_3</zorder>
@@ -414,6 +446,7 @@ color: rgb(170, 0, 0);
    <zorder>pushButton</zorder>
    <zorder>label_2</zorder>
    <zorder>label_3</zorder>
+   <zorder>pushButton_4</zorder>
   </widget>
  </widget>
  <resources/>
