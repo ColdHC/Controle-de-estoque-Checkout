@@ -15,11 +15,7 @@ lucro = 0
 
 
 banco = mysql.connector.connect(
-    host="26.10.149.113",
-    port=3306,
-    user="teste",
-    passwd="73914682@Vv",
-    database="cadastro_produtos"
+*
 )
 def calculoluc():
     global lucro
